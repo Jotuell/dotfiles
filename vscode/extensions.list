@@ -2,13 +2,23 @@
 hookyqr.beautify
 shardulm94.trailing-spaces
 alefragnani.project-manager
+formulahendry.auto-close-tag
 spywhere.guides
 
 # Languages
 felixfbecker.php-intellisense
+mblode.twig-language-2
+ms-python.python
+octref.vetur
 
 # Themes
-alefragnani.project-manager
+equinusocio.vsc-material-theme
+pkief.material-icon-theme
 
 #Git
-ziyasal.vscode-open-in-github
+# ziyasal.vscode-open-in-github
+
+# Code spell checker
+streetsidesoftware.code-spell-checker
+streetsidesoftware.code-spell-checker-spanish
+streetsidesoftware.code-spell-checker-catalan
