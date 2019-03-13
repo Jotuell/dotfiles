@@ -1,39 +1,108 @@
 {
-    // Editor
+    "auto-close-tag.activationOnLanguage": [
+        "xml",
+        "php",
+        "jinja",
+        "javascriptreact",
+        "typescriptreact",
+        "markdown",
+        "vue",
+        "HTML (Eex)"
+    ],
+    "cSpell.language": "en,en-GB,en-US,es,es-ES",
+    "cSpell.showStatus": false,
+    "debug.allowBreakpointsEverywhere": true,
+    "editor.accessibilitySupport": "off",
+    "editor.codeLens": true,
+    "editor.colorDecorators": true,
+    "editor.dragAndDrop": false,
+    "editor.folding": false,
+    // "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 14,
+    "editor.glyphMargin": true,
     "editor.minimap.enabled": true,
     "editor.minimap.renderCharacters": false,
+    "editor.rulers": [
+        80
+    ],
+    "editor.scrollBeyondLastLine": false,
+    "editor.snippetSuggestions": "none",
+    "editor.tabCompletion": "on",
+    "editor.wordWrap": "on",
+    "editor.wordWrapColumn": 80,
     "editor.detectIndentation": true,
     "editor.roundedSelection": false,
     "editor.renderIndentGuides": false,
     "editor.formatOnPaste": true,
     "editor.tabSize": 4,
     "editor.insertSpaces": true,
-    "workbench.colorTheme": "Material Theme Darker High Contrast",
-
-    // Explorer
+    "emmet.showExpandedAbbreviation": "never",
+    "emmet.triggerExpansionOnTab": false,
+    "emmet.includeLanguages": {
+        "twig": "html"
+    },
+    "explorer.confirmDelete": false,
+    "explorer.decorations.badges": true,
     "explorer.openEditors.visible": 0,
-
-    // Files
-    "files.insertFinalNewline": true,
+    "extensions.ignoreRecommendations": true,
+    "files.associations": {
+        ".babelrc": "jsonc",
+        ".eslintrc": "jsonc",
+        "*.pyi": "python",
+        "Brewfile": "ruby",
+        "vimrc": "viml",
+        "*.html": "twig"
+    },
+    "files.autoSave": "onFocusChange",
     "files.exclude": {
-        "**/.git": true,
         "**/.DS_Store": true,
         "**/__pycache__": true,
+        "**/.cache": true,
+        "**/.idea": true,
+        "**/.pytest_cache": true,
+        "**/.mypy_cache": true,
+        "**/.venv": true,
+        "**/.coverage": true,
+        "**/*.py[co]": true,
+        "**/.git": true,
         "**/**/*.pyc": true
     },
-    "files.associations": {
-        "Brewfile": "ruby",
-        "vimrc": "viml"
+    "files.insertFinalNewline": false,
+    "git.autofetch": false,
+    "python.formatting.provider": "none",
+    "python.pythonPath": "${workspaceFolder}/.venv/bin/python3",
+    "python.terminal.activateEnvironment": true,
+    "python.workspaceSymbols.enabled": true,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "terminal.integrated.env.osx": {
+        "SOBOLE_THEME_MODE": "dark"
     },
-
-    // Window - prevent blurry text on secondary monitor
+    "terminal.integrated.enableBell": true,
+    "vetur.validation.script": false,
+    "vetur.validation.style": false,
+    "vetur.validation.template": false,
+    "window.newWindowDimensions": "maximized",
     "window.zoomLevel": 0,
-
-    // Word-wrap markdown
-    "[markdown]": {
-        "editor.wordWrap": "on"
+    "workbench.colorCustomizations": {
+        // "gitDecoration.modifiedResourceForeground": "#d4cb68"
     },
-
-    // php
-    "php.suggest.basic": false
+    "workbench.colorTheme": "Material Theme Darker High Contrast",
+    "editor.tokenColorCustomizations": {
+        "[Material Theme Darker High Contrast]": {
+            "comments": "#6a7279",
+        }
+    },
+    "workbench.editor.labelFormat": "short",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.statusBar.feedback.visible": false,
+    "workbench.tips.enabled": false,
+    "python.linting.enabled": false,
+    "git.showInlineOpenFileAction": false,
+    "php.suggest.basic": false,
+    "cSpell.userWords": [
+        "keepassxc"
+    ],
 }
