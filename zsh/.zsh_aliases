@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Common shortcuts
 alias reload="source ~/.zshrc"
 alias _="sudo -E"
@@ -32,3 +34,36 @@ alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[
 
 # Prevent ZSH from throwing autocorrect for weird-looking Sass commands
 alias sass='nocorrect sass'
+
+alias zshconfig='nano ~/.zshrc'
+
+#Git-ftp
+alias pushftp='git ftp push --syncroot .'
+alias catcftp='git ftp catchup --syncroot .'
+alias initftp='git ftp init --syncroot .'
+
+#Connections
+alias sshapo='ssh apostrof@185.42.104.139'
+
+#Folder alias
+alias prj='cd ~/projects'
+alias vlocal='cd ~/vagrant-local'
+
+#Wordpress alias
+alias apotheme='cd public_html/wp-content/themes/apostrof-theme'
+alias startworking='code . && cd public_html/wp-content/themes/apostrof-theme && yarn watch'
+
+#Composer alias
+alias compreset='rm -rf vendor/ && rm composer.lock && composer install'
+
+# Vagrant alias
+alias vsus='vagrant suspend'
+alias vres='vagrant resume'
+alias vup='vagrant up'
+alias vrel='vagrant reload'
+alias vrelprov='vagrant reload --provision'
+alias vlocalsus='cd ~/vagrant-local && vagrant suspend'
+alias vlocalres='cd ~/vagrant-local && vagrant resume'
+alias vlocalup='cd ~/vagrant-local && vagrant up'
+alias vlocalrel='cd ~/vagrant-local && vagrant reload'
+alias vlocalrelprov='cd ~/vagrant-local && vagrant reload --provision'
