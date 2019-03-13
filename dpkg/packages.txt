@@ -2,3 +2,14 @@ build-essential
 git-gui
 gitk
 zsh
+filezilla
+mysql-workbench
+google-chrome-stable
+ffmpeg
+virtualbox-5.2
+virtualbox-ext-pack
+vagrant
+apt-transport-https
+ca-certificates
+curl
+software-properties-common
