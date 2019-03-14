@@ -1,4 +1,0 @@
-gimp
-keepassxc
-spotify
-vscode
