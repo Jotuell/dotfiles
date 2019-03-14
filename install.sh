@@ -38,6 +38,11 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 sudo apt update
 sudo apt install docker-ce
 
+# Install Boostnote
+wget -c "https://github.com/BoostIO/boost-releases/releases/download/v0.11.15/boostnote_0.11.15_amd64.deb"
+sudo dpkg -i boostnote_0.11.15_amd64.deb
+rm boostnote_0.11.15_amd64.deb
+
 # Create symlinks
 DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
