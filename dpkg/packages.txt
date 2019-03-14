@@ -5,6 +5,7 @@ zsh
 filezilla
 mysql-workbench
 google-chrome-stable
+firefox
 ffmpeg
 virtualbox-5.2
 virtualbox-ext-pack
@@ -13,3 +14,6 @@ apt-transport-https
 ca-certificates
 curl
 software-properties-common
+copyq
+copyq-doc
+copyq-plugins
