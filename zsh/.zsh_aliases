@@ -22,7 +22,8 @@ else # macOS `ls`
   colorflag="-G"
   export LSCOLORS='BxBxhxDxfxhxhxhxhxcxcx'
 fi
-alias l="ls -lF ${colorflag}"
+alias l='ls -l | grep "^d" && ls -la | grep "^-" && ls -la | grep "^l" || true'
+alias ll='ls -la | grep "^d" && ls -la | grep "^-" && ls -la | grep "^l" || true'
 alias la="ls -laF ${colorflag}"
 alias lsd="ls -lF ${co#lorflag} | grep --color=never '^d'"
 alias ls="command ls ${colorflag}"
