@@ -34,7 +34,7 @@
     "editor.detectIndentation": true,
     "editor.roundedSelection": false,
     "editor.renderIndentGuides": false,
-    "editor.formatOnPaste": true,
+    "editor.formatOnPaste": false,
     "editor.tabSize": 4,
     "editor.insertSpaces": true,
     "emmet.showExpandedAbbreviation": "never",
@@ -65,8 +65,16 @@
         "**/.venv": true,
         "**/.coverage": true,
         "**/*.py[co]": true,
-        "**/.git": true,
         "**/**/*.pyc": true
+	"**/.git": true,
+        "**/.vagrant": true
+    }
+    "files.wathcerExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/*/**": true,
+        "**/vendor": true
+        "**/puphpet": true
     },
     "files.insertFinalNewline": false,
     "git.autofetch": false,
@@ -105,4 +113,5 @@
     "cSpell.userWords": [
         "keepassxc"
     ],
+    "trailing-spaces.includeEmptyLines": false
 }
