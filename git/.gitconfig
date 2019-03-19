@@ -58,14 +58,14 @@
    cl = clone
    ci = commit
    co = checkout
-   br = branch
+   br = --no-pager branch
    r = reset
    cp = cherry-pick
    gr = grep -Ii
    # }}}
    # tweak defaults {{{
    diff = diff --word-diff
-   branch = branch -ra
+   branch = --no-pager branch -ra
    grep = grep -Ii
    bra = branch -ra
    ai = add --interactive

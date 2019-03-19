@@ -28,8 +28,15 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 sudo apt install fonts-powerline
 
-# Install VS Code extensions
-cat vscode/extensions.list | grep -v '^#' | xargs -L1 code --install-extension
+# Setup VS Code
+if hash code 2>/dev/null
+then
+    cat vscode/extensions.list | grep -v '^#' | xargs -L1 code --install-extension
+    sudo su -c "echo 'fs.inotify.max_user_watches=524288' >> /etc/sysctl.conf"
+    sudo sysctl -p
+else
+    echo "'code' was not found in PATH"
+fi
 
 # Install Dropbox
 wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf - -C ~
@@ -39,9 +46,14 @@ wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf - -C ~
 wget -c "https://releases.hashicorp.com/vagrant/2.2.4/vagrant_2.2.4_x86_64.deb"
 sudo dpkg -i vagrant_2.2.4_x86_64.deb
 rm vagrant_2.2.4_x86_64.deb
-vagrant plugin install $(cat vagrant/plugins.list)
 mkdir ~/projectes
-git clone -b master git://github.com/Varying-Vagrant-Vagrants/VVV.git ~/vagrant-local
+if hash vagrant 2>/dev/null
+then
+    cat vscode/extensions.list | grep -v '^#' | xargs -L1 code --install-extension
+    vagrant plugin install $(cat vagrant/plugins.list)
+else
+    echo "'vagrant' was not found in PATH"
+fi
 
 # Install Boostnote
 wget -c "https://github.com/BoostIO/boost-releases/releases/download/v0.11.15/boostnote_0.11.15_amd64.deb"

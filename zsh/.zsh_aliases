@@ -36,7 +36,9 @@ alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[
 # Prevent ZSH from throwing autocorrect for weird-looking Sass commands
 alias sass='nocorrect sass'
 
-alias zshconfig='nano ~/.zshrc'
+alias zshconfig='nano ~/.dotfiles/zsh/.zshrc'
+alias zshalias='nano ~/.dotfiles/zsh/.zsh_aliases'
+alias zshexports='nano ~/.dotfiles/zsh/.zsh_exports'
 
 #Git-ftp
 alias pushftp='git ftp push --syncroot .'
@@ -44,7 +46,8 @@ alias catcftp='git ftp catchup --syncroot .'
 alias initftp='git ftp init --syncroot .'
 
 #Connections
-alias sshapo='ssh apostrof@185.42.104.139'
+alias sshcdmon='ssh apostrof@185.42.104.139'
+alias sshintranet='ssh admin@213.167.240.97'
 
 #Folder alias
 alias prj='cd ~/projects'
