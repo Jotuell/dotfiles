@@ -1,6 +1,8 @@
 build-essential
 apt-transport-https
 ca-certificates
+php 
+libapache2-mod-php
 gnupg-agent
 software-properties-common
 gconf2
@@ -17,3 +19,4 @@ docker-ce
 code
 nodejs
 terminator
+libreoffice-core
