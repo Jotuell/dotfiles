@@ -1,6 +1,10 @@
 [global_config]
   window_state = maximise
 [keybindings]
+[profiles]
+  [[default]]
+    cursor_color = "#aaaaaa"
+    login_shell = True
 [layouts]
   [[default]]
     [[[child1]]]
@@ -11,6 +15,3 @@
       parent = ""
       type = Window
 [plugins]
-[profiles]
-  [[default]]
-    cursor_color = "#aaaaaa"

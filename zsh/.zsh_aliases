@@ -46,12 +46,14 @@ alias catcftp='git ftp catchup --syncroot .'
 alias initftp='git ftp init --syncroot .'
 
 #Connections
-alias sshcdmon='ssh apostrof@185.42.104.139'
-alias sshintranet='ssh admin@213.167.240.97'
+alias sshriceup='ssh riceup@95.216.114.206'
 
 #Folder alias
 alias prj='cd ~/projects'
 alias vlocal='cd ~/vagrant-local'
+alias www='cd /var/www'
+alias wpthemes='cd public_html/wp-content/themes'
+alias wpplugins='cd public_html/wp-content/plugins'
 
 #Wordpress alias
 alias apotheme='cd public_html/wp-content/themes/apostrof-theme'
@@ -64,10 +66,16 @@ alias compreset='rm -rf vendor/ && rm composer.lock && composer install'
 alias vsus='vagrant suspend'
 alias vres='vagrant resume'
 alias vup='vagrant up'
+alias vstatus='vagrant status'
 alias vrel='vagrant reload'
 alias vrelprov='vagrant reload --provision'
-alias vlocalsus='cd ~/vagrant-local && vagrant suspend'
-alias vlocalres='cd ~/vagrant-local && vagrant resume'
-alias vlocalup='cd ~/vagrant-local && vagrant up'
-alias vlocalrel='cd ~/vagrant-local && vagrant reload'
-alias vlocalrelprov='cd ~/vagrant-local && vagrant reload --provision'
+
+#Tmux alias
+alias tx='tmux'
+
+#Apache2 aliases
+alias a2reload='systemctl reload apache2'
+alias a2start='systemctl start apache2'
+alias a2stop='systemctl stop apache2'
+alias a2restart='systemctl restart apache2'
+

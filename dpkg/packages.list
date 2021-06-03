@@ -9,6 +9,7 @@ gconf2
 vim
 git-gui
 gitk
+git-ftp
 zsh
 filezilla
 mysql-workbench
@@ -18,5 +19,5 @@ virtualbox
 docker-ce
 code
 nodejs
-terminator
 libreoffice-core
+yarn

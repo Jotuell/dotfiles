@@ -16,18 +16,18 @@
 sites:
 
   # latest version of WordPress, can be used for client work and testing
-  igualtatsantboi:
-    description: "Centre de recursos i documentació de les dones"
-    repo: https://github.com/Varying-Vagrant-Vagrants/custom-site-template.git
-    vm_dir: /srv/www/igualtatsantboi
-    local_dir: /home/lluis/projects/igualtatsantboi
-    skip_provisioning: false
-    nginx_upstream: php71
-    hosts:
-      - igualtatsantboi.test
+  # igualtatsantboi:
+  #   description: "Centre de recursos i documentació de les dones"
+  #   repo: https://github.com/Varying-Vagrant-Vagrants/custom-site-template.git
+  #   vm_dir: /srv/www/igualtatsantboi
+  #   local_dir: /home/lluis/projects/igualtatsantboi
+  #   skip_provisioning: false
+  #   nginx_upstream: php71
+  #   hosts:
+  #     - igualtatsantboi.test
 
   apostrof:
-    description: "Centre de recursos i documentació de les dones"
+    description: "Web de l'Apòstrof"
     repo: https://github.com/Varying-Vagrant-Vagrants/custom-site-template.git
     vm_dir: /srv/www/apostrof
     local_dir: /home/lluis/projects/apostrof-web-2019

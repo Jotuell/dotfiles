@@ -7,7 +7,8 @@
         "typescriptreact",
         "markdown",
         "vue",
-        "HTML (Eex)"
+        "HTML (Eex)",
+        "twig"
     ],
     "cSpell.language": "en,en-GB,en-US,es,es-ES",
     "cSpell.showStatus": false,
@@ -16,7 +17,6 @@
     "editor.codeLens": true,
     "editor.colorDecorators": true,
     "editor.dragAndDrop": false,
-    "editor.folding": false,
     // "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
     "editor.fontSize": 14,
@@ -27,7 +27,7 @@
         80
     ],
     "editor.scrollBeyondLastLine": false,
-    "editor.snippetSuggestions": "none",
+    "editor.snippetSuggestions": "top",
     "editor.tabCompletion": "on",
     "editor.wordWrap": "on",
     "editor.wordWrapColumn": 80,
@@ -35,8 +35,9 @@
     "editor.roundedSelection": false,
     "editor.renderIndentGuides": false,
     "editor.formatOnPaste": false,
-    "editor.tabSize": 4,
+    "editor.tabSize": 2,
     "editor.insertSpaces": true,
+    "editor.foldingStrategy": "auto",
     "emmet.showExpandedAbbreviation": "never",
     "emmet.triggerExpansionOnTab": false,
     "emmet.includeLanguages": {
@@ -44,7 +45,7 @@
     },
     "explorer.confirmDelete": false,
     "explorer.decorations.badges": true,
-    "explorer.openEditors.visible": 0,
+    "explorer.openEditors.visible": 10,
     "extensions.ignoreRecommendations": true,
     "files.associations": {
         ".babelrc": "jsonc",
@@ -52,7 +53,7 @@
         "*.pyi": "python",
         "Brewfile": "ruby",
         "vimrc": "viml",
-        "*.html": "twig"
+        "*.html": "html"
     },
     "files.autoSave": "onFocusChange",
     "files.exclude": {
@@ -65,15 +66,15 @@
         "**/.venv": true,
         "**/.coverage": true,
         "**/*.py[co]": true,
-        "**/**/*.pyc": true
+        "**/**/*.pyc": true,
 	"**/.git": true,
         "**/.vagrant": true
-    }
+    },
     "files.wathcerExclude": {
         "**/.git/objects/**": true,
         "**/.git/subtree-cache/**": true,
         "**/node_modules/*/**": true,
-        "**/vendor": true
+        "**/vendor": true,
         "**/puphpet": true
     },
     "files.insertFinalNewline": false,
@@ -111,7 +112,32 @@
     "git.showInlineOpenFileAction": false,
     "php.suggest.basic": false,
     "cSpell.userWords": [
-        "keepassxc"
+        "antialiased",
+        "cortinahome",
+        "divformfield",
+        "keepassxc",
+        "lenguetas",
+        "minitexto"
     ],
-    "trailing-spaces.includeEmptyLines": false
+    "trailing-spaces.includeEmptyLines": false,
+    "explorer.confirmDragAndDrop": false,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "projectManager.git.baseFolders": [
+        "projects"
+    ],
+    "html.format.wrapLineLength": 180,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false
+    }
 }
